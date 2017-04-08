@@ -165,10 +165,6 @@ apt-get -yq install libnss3-dev libnspr4-dev pkg-config libpam0g-dev \
 apt-get -yq --no-install-recommends install xmlto || exiterr2
 apt-get -yq install ppp xl2tpd || exiterr2
 
-bigecho "Installing Fail2Ban to protect SSH..."
-
-apt-get -yq install fail2ban || exiterr2
-
 bigecho "Compiling and installing Libreswan..."
 
 swan_ver=3.20
